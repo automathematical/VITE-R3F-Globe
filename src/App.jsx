@@ -106,7 +106,7 @@ export default function App() {
         <Suspense fallback={null}>
           {/* <Globe {...{ lat, long }} />` */}
           <Globe />`
-          <OrbitControls />
+          <OrbitControls autoRotate />
         </Suspense>
       </Canvas>
     </div>
