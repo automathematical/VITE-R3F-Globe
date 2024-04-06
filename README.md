@@ -1,4 +1,4 @@
 # React + Vite + R3F + DREI + THREEJS
 
 
-![Uploading Screenshot 2024-04-06 at 12.37.17.png…]()
+![alt text]([https://github.com/automathematical/VITE-R3F-Globe/blob/main/public/globe_preview.png] "globe preview")
