@@ -11,7 +11,7 @@ import './styles.css'
 
 const name = (type) => `earth_1k_${type}.jpg`
 
-function Globe({ lat, long }) {
+function Globe() {
   const [colorMap, displacementMap, normalMap, roughnessMap, aoMap] = useLoader(TextureLoader, [
     name('Color'),
     name('Displacement'),
@@ -39,7 +39,7 @@ function Globe({ lat, long }) {
       <group rotation-y={1.61}>
         <group rotation-x={0.71}>
           <group
-            position={[0, 1.2, 0]}
+            position={[0, 1.3, 0]}
             rotation={[0, Math.PI / 2, 0]}>
             <Marker rotation={[0, Math.PI, 0]}>
               <div style={{ position: 'absolute', fontSize: 10, letterSpacing: -0.5, left: 17.5 }}>Belgium</div>
@@ -104,7 +104,6 @@ export default function App() {
     <div className='App'>
       <Canvas>
         <Suspense fallback={null}>
-          {/* <Globe {...{ lat, long }} />` */}
           <Globe />`
           <OrbitControls autoRotate />
         </Suspense>
